@@ -19,7 +19,7 @@ The project consists of:
 
 ## Project Structure
 ```
-DL-project
+DL
 │── frontend/       # React frontend
 │── backend/        # Flask backend
 │   ├── app/
@@ -41,7 +41,7 @@ DL-project
 ### 1. Clone the Repository
 ```sh
 git clone https://github.com/shruti10951/DeepLearningProject.git
-cd DL-project
+cd DL
 ```
 
 ### 2. Backend Setup
