@@ -1,0 +1,54 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+
+# Ignore Python virtual environment
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+
+# Ignore environment variables and credentials
+.env
+*.env
+
+# Ignore logs and temporary files
+logs/
+*.log
+*.out
+*.pid
+
+# Ignore model files (since you're hosting them on Hugging Face)
+models/*.h5
+
+# Ignore Flask cache and database files
+instance/
+*.sqlite3
+
+# Ignore Node.js dependencies (frontend)
+frontend/node_modules/
+frontend/.env
+frontend/.next/
+frontend/.parcel-cache/
+frontend/dist/
+frontend/.turbo/
+
+# Ignore build artifacts
+build/
+dist/
+
+# Ignore IDE/editor-specific files
+.vscode/
+.idea/
+*.iml
+
+# Ignore package-lock and yarn lock (optional if using npm/yarn)
+package-lock.json
+yarn.lock
+
+# Ignore macOS system files
+*.swp
+*.swo

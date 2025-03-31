@@ -1,0 +1,115 @@
+/* 🌙 Dark Mode Theme */
+:root {
+  --bg-color: #18181b;
+  --card-bg: #202024;
+  --primary-text: #fafafa;
+  --accent-color: #86c3ff; /* Pastel Blue */
+  --secondary-accent: #c3a1ff; /* Pastel Purple */
+  --secondary-accent-bg: #c3a1ff79; /* Pastel Purple */
+
+  --hover-bg: rgba(255, 255, 255, 0.1);
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--primary-text);
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* 📜 Card Container */
+.container {
+  width: 80%;
+  max-width: 500px;
+  padding: 2rem;
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px var(--hover-bg);
+  text-align: center;
+  margin: 1rem auto;
+}
+
+/* 🔹 File Upload Box */
+.upload-box {
+  border: 2px dashed var(--accent-color);
+  padding: 2rem;
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.upload-box:hover {
+  background-color: var (--secondary-accent-bg);
+}
+
+/* 🔘 Buttons */
+.button {
+  background: var(--accent-color);
+  color: black;
+  padding: 0.7rem 1.5rem;
+  margin-top: 05rem;
+  border-radius: 8px;
+  transition: 0.3s;
+  cursor: pointer;
+  font-size: 1rem;
+  border: none;
+}
+
+.button:hover {
+  background: var(--secondary-accent);
+  transform: scale(1.05);
+}
+
+/* 🎭 Tab Switcher *//* 🎭 Cool Sliding Tab Switcher */
+.tab-container {
+  display: flex;
+  position: relative;
+  background: var(--card-bg);
+  padding: 0.5rem;
+  border-radius: 10px;
+  width: 280px;
+  margin: 1rem auto;
+  box-shadow: inset 0px 0px 5px var(--hover-bg);
+  overflow: hidden;
+}
+
+/* 🚀 Sliding Indicator */
+.tab-slider {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background: var(--secondary-accent);
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* 🔘 Tab Buttons */
+.tab-button {
+  flex: 1;
+  padding: 0.8rem 1rem;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  background: none;
+  color: var(--primary-text);
+  position: relative;
+  z-index: 2;
+  transition: color 0.3s ease-in-out;
+}
+
+.tab-button.active {
+  color: black;
+}
+
+/* 🔄 Sliding Effect */
+.tab-container.classification .tab-slider {
+  transform: translateX(0);
+}
+
+.tab-container.denoising .tab-slider {
+  transform: translateX(100%);
+}
