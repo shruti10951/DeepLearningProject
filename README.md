@@ -40,7 +40,7 @@ DL-project
 
 ### 1. Clone the Repository
 ```sh
-git clone <your-repo-url>
+git clone https://github.com/shruti10951/DeepLearningProject.git
 cd DL-project
 ```
 
