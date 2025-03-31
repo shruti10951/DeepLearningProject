@@ -84,8 +84,8 @@ Modify `backend/app/utils/model_loader.py`:
 ```python
 from huggingface_hub import hf_hub_download
 
-CNN_MODEL_PATH = hf_hub_download(repo_id="your-hf-repo", filename="cnnModel.h5")
-DAE_MODEL_PATH = hf_hub_download(repo_id="your-hf-repo", filename="denoiseModel.h5")
+CNN_MODEL_PATH = hf_hub_download(repo_id="shruti10951/DeepLearningModels", filename="cnnModel.h5")
+DAE_MODEL_PATH = hf_hub_download(repo_id="shruti10951/DeepLearningModels", filename="denoiseModel.h5")
 ```
 
 ---
